@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <title>RegistrApp</title>
+    <script>
+        function load() {
+          alert("evento load detectado!");
+        }
+        window.onload = load;
+      </script>
+</head>
+
+<body>
+
+    <!--encabezado-->
+
+
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light">Contactanos (+56)9 12213443 </p>
+    </header>
+
+
+    <!-- barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">RegistrApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary btn-primary-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--siler de imag-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/alumnos-duoc-960x600.jpg" class="img-fluid w-100" alt="slide1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/alumnos-extranjeros.jpeg" class="img-fluid w-100" alt="slide2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="img/app.png" class="img-fluid w-100" alt="slide3">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+
+    <!-- barra de navegacion-->
+    <section class="w-50 mx-auto text text-center pt-5" id="intro">
+        <h1 class="p-3 fs-2 border-top border-3">Registra tus clases sin problema con
+            <span class="text-primary"> RegistrApp</span>
+        </h1>
+        <p class=" p-3 fs-4"><span class="text-primary">RegistrApp </span> es una aplicacion movil que puede ser
+            utilizada en plataformas tanto como Android e iOS
+            que permite que cada alumno registre su propia asistencia.</p>
+    </section>
+
+    <!--descarga -->
+    <div class=" text-center d-grid gap-2 col-6 mx-auto border-top border-3 p-3 fs-2"> 
+        <p class=" p-3 fs-4">Pulse el boton <spam class="text-primary">Descargar </spam>para comenzar la descargar</p>
+        <a class="btn btn-primary" href="https://drive.google.com/file/d/1m_maPxtCe2c_si8kX2KTlehSH887gFw4/view?usp=sharing" role="button">Descargar</a>
+        
+      </div>
+
+      <div id="qrcode" class="d-grid gap-2 col-6 mx-auto  p-3 fs-2  text-center">
+        <p class=" p-3 fs-4">O bien lo puedes descargar por QR desde tu movil</p>
+        <img src="https://www.codigos-qr.com/qr/php/qr_img.php?d=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1m_maPxtCe2c_si8kX2KTlehSH887gFw4%2Fview%3Fusp%3Dsharing&s=6&e=m" alt="Generador de Códigos QR Codes" class="justify-content-center"/>
+        <br/><a href="https://www.codigos-qr.com/en/qr-code-generator/" target="_blank" id"qrgenerator">Descargar por QR</a>
+        </div>
+    <!--servicios-->
+
+
+    <section class="container-fluid">
+        <div class="row w-75 mx-auto  servicio-fila">
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="img/sesion.jpg" alt="ingresar" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Como ingresar</h3>
+                    <p class="px-4">Para realizar el ingreso a la aplicacion solo basta introducir las credenciales de duoc que posee el alumno </p>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5  icono-wrap">
+                <img src="img/asistencia.jpg" alt="asistencia" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Como tomar asistencia</h3>
+                    <p class="px-4">Al momento de ingresar a una clase el docente despliegara un codigo QR el cual debe ser leido por el alumno </p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="img/funciona.png" alt="funciona" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Como funciona</h3>
+                    <p class="px-4">Al momento del despliegue el QR de parte del profesor, se enviara un correo el cual informara los datos del alumno, fecha y hora de la asistencia</p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start my-5 icono-wrap">
+                <img src="img/descargar.png" alt="Motivo" width="180" height="160">
+                <div>
+                    <h3 class="fs-5 mt-4 px-4 pb-1">Motivo</h3>
+                    <p class="px-4">El motivo de creacion de esta aplicacion mobil es facilitar la toma de asistencia devido a los inconvenientes producidos por la pandemia </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+
+        
+
+
+</body>
+
+</html>
